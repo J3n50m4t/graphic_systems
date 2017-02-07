@@ -88,4 +88,22 @@ else{
 ```
 
 # Observer
+
 obvserver schaut auf virtual Target t
+
+
+# Raytracing
+Der Strahl startet in der Observerlocation o und geht jedes mal durch den Pixel(xy)
+Parameter t erlaubt die Bewegung auf dem Strahl
+> r(t) = o*td
+
+d geht vom Ovserer duch P(xy)
+d = p(xy) - o
+Problem, wir wissen noch nicht wie wir an Pxy kommen
+![raytracing](http://imgur.com/lBZfRU3.jpg)
+
+## Intersection Kreis Sphere
+
+>(M - x)² = r²
+
+> r(t) = o + td
