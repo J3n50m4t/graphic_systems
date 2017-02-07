@@ -22,7 +22,7 @@ for (x = x0+1, x<= x1; x++){
 n = Farben
 k = max mögliche Farben
 d = gerundete schrittweite
-``` 
+```
 d = n/k
 (n/k) * (n/(k-1))
 
@@ -32,7 +32,7 @@ d = n/k
 
 gray < 128 -> black pixel
 gray  >= 128 -> white pixel
-### error Filter 
+### error Filter
 
 # Line clipping
 Gegen den Bildschirm oder gegen die Fensterarea
@@ -40,21 +40,41 @@ Bit Pattern: Oben unten rechts Links 0000
 
 
 # Projektion
-### x
-1 |  0| 0
---- | --- | ---
-0 | cos a | -sin a
-0 | sind a | cos a
+> Drehung gegen den Uhrzeigersinn
+> ### x
+> 1 |  0| 0
+> --- | --- | ---
+> 0 | cos a | -sin a
+> 0 | sind a | cos a
+>
+> ###y
+> cos a| 0| sina
+> --- | --- | ---
+> 0 | 1 | 0
+> -sind a | 0 | cos a
+> ###z
+> cos a| -sina | 0
+> --- | --- | ---
+> sin a| cosa | 0
+> 0 | 0 | 1
 
-###y
-cos a| 0| sina 
---- | --- | ---
-0 | 1 | 0
--sind a | 0 | cos a
-###z
-cos a| | 0
---- | --- | ---
- |  | 0
-0 | 0 | 1
+## Perspektive
+> x' = xd/z
+
+![perspektive](http://imgur.com/Kjm9yx6.jpg)
+
+# Verdeckte Linien
 
 
+```cpp
+if(entered=false){
+  entered = true;
+  // Line just entered the face
+}
+else{
+  entered = false;
+  // Line just left the face
+}
+```
+
+# Observer
