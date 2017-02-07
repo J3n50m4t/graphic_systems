@@ -64,6 +64,16 @@ Bit Pattern: Oben unten rechts Links 0000
 ![perspektive](http://imgur.com/Kjm9yx6.jpg)
 
 # Verdeckte Linien
+Gitternetze zeigen immer alle Linien -> es wird uneindeutig ob eine Linie verdeckt ist oder nicht.
+Entfernt man verdeckte Linien, so wird das Objekt erheblich klarer dargestellt.
+Zwingend notwendig dafür sind Vektoren, Laser oder Plotter
+### Appel's Algorithmus
+Entfernen der nach hinten gerichteten Flächen (winkel zwischen z und n über 90°)
+ * n Vektor der Flächen
+ * z vektor = Sicht
+
+Ist eine Fläche bedeckt oder nicht - false/true
+
 
 
 ```cpp
