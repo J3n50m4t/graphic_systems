@@ -78,3 +78,4 @@ else{
 ```
 
 # Observer
+obvserver schaut auf virtual Target t
