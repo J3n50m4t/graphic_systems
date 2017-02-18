@@ -1,3 +1,5 @@
+# alot of stuff 
+
 # MIDPOINT
 F1 =  Δy - 0,5 Δx
 F2 = F1 + Δy - Δx
